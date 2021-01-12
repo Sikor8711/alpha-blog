@@ -10,12 +10,12 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body>
+  <body id="page_content">
     <%= render 'layouts/navbar' %>
-
-    <main class="container">
-    <%= render 'layouts/messages' %>
-    <%= yield %>      
-    </main>
+      <div class="container">
+        <%= render 'layouts/messages' %>
+        <%= yield %>
+      </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
